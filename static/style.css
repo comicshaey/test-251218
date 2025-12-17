@@ -631,3 +631,50 @@ a:hover {
   font-size: 0.75rem;
   background: var(--primary-soft);
 }
+
+/* ============================
+   제목 계층 구분 (docs-portal 전용 스코프)
+   ============================ */
+
+/* 사이드바 섹션 제목: 여백 과다 방지 + 글자만 구분 */
+.docs-sidebar .section-title {
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin: 10px 6px 6px;
+}
+
+/* 본문 문서 제목: page-title의 크기는 유지하고, 굵기만 보강 */
+.docs-content .doc-title {
+  font-weight: 800;
+  /* font-size는 page-title이 담당하므로 여기서 건드리지 않음 */
+  margin-top: 0;
+}
+
+/* ============================
+   문단 강조
+   ============================ */
+.text-strong {
+  font-weight: 700;
+}
+
+/* ============================
+   FAQ 질문 강조
+   ============================ */
+
+.card dl {
+  margin: 0;
+}
+
+.card dt {
+  font-weight: 800;          /* 질문 굵게 */
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.card dd {
+  margin-left: 0;
+  margin-bottom: 12px;
+  color: var(--text-muted);  /* 답변은 톤 다운 */
+  line-height: 1.6;
+}
+
